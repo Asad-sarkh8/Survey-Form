@@ -1,0 +1,83 @@
+<style>
+body {
+  font-family: helvetica, lato;
+}
+#main {
+  background-image: url("https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  overflow-y: scroll;
+  font-size: 24px;
+}
+#main::after {
+  content: "";
+  background-color: rgb(0, 0, 0, .8);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+p {
+  text-align: center;
+  font-size: 50px;
+  z-index: 2;
+  position: relative  ;
+}
+
+#main-content {
+  background-color: rgb(27, 27, 50, .8);
+  display: flex;
+  max-width: 750px;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px -1px 20px 7px cyan;
+}
+
+#Name, #Email, #number, #option-select {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  
+}
+#comment {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  padding: 5px 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  
+}
+
+#submit {
+  display: block;
+  width:100%;
+  background: #37af65;
+  padding: 12px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px
+}
+</style>
